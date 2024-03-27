@@ -34,16 +34,16 @@ public class Task1_3_Customer {
         return (endTime - startTime) / 1000.0;
     }
 
-    private static void viive(int aika) {
+    private static void viive(long aika) {
         try {
-            Thread.sleep(aika*1000); //1000ms = 1s
+            Thread.sleep(aika * 1000); //1000ms = 1s
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
     public void tulosta() {
-        System.out.println("Asiakasnumero on " + id + ", aloitusaika " + startTime + ", lopetusaika " + endTime);
+        System.out.println("Asiakasnumero on " + id + ", aloitusaika: " + getStartTime() + ", lopetusaika: " + getEndTime());
     }
 
     public static void main(String[] args) {
@@ -57,7 +57,7 @@ public class Task1_3_Customer {
         //Customer 2
         Task1_3_Customer asiakas2 = new Task1_3_Customer();
         asiakas2.setStartTime(System.currentTimeMillis());
-        viive(3);
+        viive(5);
         asiakas2.setEndTime(System.currentTimeMillis());
 
         asiakas1.tulosta();
