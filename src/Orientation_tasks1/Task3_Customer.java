@@ -1,12 +1,12 @@
 package Orientation_tasks1;
 
-public class Task1_3_Customer {
+public class Task3_Customer {
     private int id;
     private static int _id = 1;
     private long startTime;
     private long endTime;
 
-    public Task1_3_Customer() {
+    public Task3_Customer() {
         id = _id++;
     }
 
@@ -49,20 +49,20 @@ public class Task1_3_Customer {
     public static void main(String[] args) {
 
         //Customer 1
-        Task1_3_Customer asiakas1 = new Task1_3_Customer();
+        Task3_Customer asiakas1 = new Task3_Customer();
         asiakas1.setStartTime(System.currentTimeMillis());
         viive(3);
         asiakas1.setEndTime(System.currentTimeMillis());
 
         //Customer 2
-        Task1_3_Customer asiakas2 = new Task1_3_Customer();
+        Task3_Customer asiakas2 = new Task3_Customer();
         asiakas2.setStartTime(System.currentTimeMillis());
         viive(5);
         asiakas2.setEndTime(System.currentTimeMillis());
 
         asiakas1.tulosta();
-        System.out.println("Palveluaika oli " + asiakas1.getDuration());
+        System.out.println("Palveluaika oli " + asiakas1.getDuration() + "\n");
         asiakas2.tulosta();
-        System.out.println("Palveluaika oli " + asiakas2.getDuration());
+        System.out.println("Palveluaika oli " + asiakas2.getDuration() + "\n");
     }
 }
