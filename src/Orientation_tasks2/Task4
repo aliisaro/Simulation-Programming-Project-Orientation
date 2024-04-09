@@ -1,0 +1,56 @@
+Call Centre Simulation: Clock 16 (Events B4, B3)
+
+Phase   Router Queue    Router  Oper 1 queue    Oper 1  Oper 2 queue    Oper 2
+B       X3              Idle    X2              Idle    Empty           Y1
+C       Empty           X3      Empty           X2      Empty           Y1
+
+Event List:
+
+Event   Time
+B5      18
+B1      20
+B2      20
+
+Results:
+
+Work complete
+X   1
+Y   0
+
+
+
+Call Centre Simulation: Clock 18 (Event B5)
+
+Phase   Router Queue    Router  Oper 1 queue    Oper 1  Oper 2 queue    Oper 2
+B       Empty           Idle    X2              Idle    Y1              Idle
+C       Empty           Empty   Empty           X3      Empty           Y1
+
+Event List:
+
+Event   Time
+B1      20
+B2      20
+
+Results:
+
+Work complete
+X   1
+Y   0
+
+
+
+Call Centre Simulation: Clock 20 (Events B1, B2)
+
+Phase   Router Queue    Router  Oper 1 queue    Oper 1  Oper 2 queue    Oper 2
+B       Empty           Idle    Empty           Idle    Empty           Idle
+C       Empty           Empty   Empty           Empty   Empty           Y1
+
+Event List:
+
+Event   Time
+
+Results:
+
+Work complete
+X   1
+Y   0
